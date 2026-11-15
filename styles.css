@@ -18,10 +18,9 @@
             max-width: 1270px;
             padding: 20px 20px;
             margin: auto;
-
         }
         header {
-            background-color: rgba(255, 255, 255, 0.884);
+            background-color: rgb(255, 255, 255);
             height: 70px;
             display: flex;
             position: sticky;
@@ -38,9 +37,7 @@
             font-weight: 500;
             text-decoration: none;
             color: var(--add-color);
-            white-space: nowrap;
-   
-            
+            white-space: nowrap;   
         }
 
 /*====================== Menu And Icon ======================  */
@@ -49,7 +46,6 @@
               align-items: center;
               gap: 15px;
         }
-
 
         .main-nav ul {
             display: flex;
@@ -63,7 +59,7 @@
         .main-nav a {
             text-decoration: none;
             color: rgb(82, 82, 82);
-            transition: all 0.4s linear;
+            transition: all 0.3s linear;
         
      
         }
@@ -82,14 +78,16 @@
         }
 /*==================== Main-nav:hover ========================  */
         .main-nav a:hover {
-            color: rgb(255, 255, 255);
-            background-color: rgba(0, 0, 0, 0.712);
+            color: rgb(0, 0, 0);
+            background-color: #fffb00;
             border-radius: 6px;
-            /* transform: translateY(-5px); */
+            /* font-size: 18.2px; */
+            /* transform: translateY(-10px); */
         }
 
         .main-nav .cart:hover,
         .main-nav .bar:hover {
+            background-color: #fffb00;
             border-radius: 50%;
             color: rgb(0, 0, 0);
             
@@ -154,8 +152,8 @@
             text-shadow: 2px 2px 10px rgb(46, 46, 46);
         }
 
-        /* =================== section2 3image =====================*/
-        .section2 {
+        /* =================== section1 3 image =====================*/
+        .section1 {
             max-width: 800px;
             margin: 60px auto 0;
             padding: 15px 15px;
@@ -164,7 +162,7 @@
             gap: 26px;
         } 
 
-        .section2 img {
+        .section1 img {
             display: block;
             width: 100%;
             /* max-width: 295px; */
@@ -178,13 +176,13 @@
             transition: all 0.3s linear;
         }
 
-        /*-------------- section2 (image:hover )-------*/
-        .section2 img:hover {
+        /*-------------- section1 (image:hover )-------*/
+        .section1 img:hover {
             transform: scale(1.1);
             box-shadow: 2px 3px 15px rgba(157, 255, 0, 0.582);
         }
-        /* ================== Product Section 3 ======================= */
-        .section3-title {
+        /* ================== Product Section 2 ======================= */
+        .section2-title {
             color: rgb(66, 66, 66);
             font-size: 25px;
             display: flex;
@@ -237,13 +235,14 @@
         }
 
         .product .card .price {
-            font-size: 20PX;
+            font-weight: 500;
+            font-size: 15PX;
             color:rgb(0, 124, 124);
         }
 
 
-/* ==================================== Section4 =============== */
-        .section4-title {
+/* ==================================== Section3 ( Latest Products ) =============== */
+        .section3-title {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -253,9 +252,9 @@
             font-size: 25px;
         }
 
-/* ============================= product section4 ============ */
+/* ============================= product section3 ...Edite ============ */
 
-        .product-section4 {
+        .product-section3 {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             max-width: 960px;
@@ -264,8 +263,8 @@
             gap: 30px;
 
         }
-        /* ---------------- section4 img-size -----------*/
-        .product-section4 .card img {
+        /* ---------------- section3 img-size -----------*/
+        .product-section3 .card img {
             display: block;
             width: 100%;
             height: auto;
@@ -274,18 +273,40 @@
             padding: 0;
             border-radius: 10px;
             transition: all 0.5s linear;
-
-
         }
-        /* ---------------- section4 img:hover -----------*/
-        .product-section4 .card img:hover {
+
+        /* ============= pagination ============ */
+        .pagination {
+            max-width: 960px;
+            display: flex;
+            gap: 25px;
+            margin: 0 auto 60px;
+        }
+
+        .pagination a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 55px;
+            height: 45px;
+            border: 1px solid var(--add-color);
+            border-radius: 6px;
+            background-color: #dae1f5;
+            font-size: 25px;
+            text-decoration: none;
+            /* margin-bottom: 40px;  */
+        }
+
+
+        /* ---------------- section3 img:hover -----------*/
+        .product-section3 .card img:hover {
             transform: translateY(-10px) scale(1.02);
             box-shadow: 1px 2px 10px var(--add-color);
             
 
         }
 
-        .product-section4 .card .name-product-sec4 {
+        .product-section3 .card .name-product-sec3 {
            margin-top: 15px;
 
            font-size: 15px;
@@ -293,11 +314,11 @@
            margin-bottom: 5px;
         }
 
-        .product-section4 .card i {
+        .product-section3 .card i {
             color: var(--add-color);
         }
 
-        .product-section4 .card .price-sec4 {
+        .product-section3 .card .price-sec3 {
             font-size: 15px;
             color:rgb(0, 124, 124);
 
@@ -315,64 +336,226 @@
             height: 70px;
         }
         
+
     
-/* =================================================================================== */
+/* ==================================NEW MENU================================================= */
 
-/* =================================================================================== */
-        /* =========== ALL Products ============= */
+/* ====================================PAG============================================= */
 
-        .all-product {
+        
+        /* ================ title of about menu ================= **************/
+        .title {
+            display: block;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title-h1 {
             display: flex;
-            flex-direction: column;
-            max-width: 900px;
+            justify-content: center;
+            align-items: center;
+
+            margin: 60px auto 10px;
+            font-size: 20px;
         }
 
-        .all-product p {
-            font-weight: 600;
-            font-size: 23px;
-            padding: 30px 0;
-            color: #5e5d5d;
-        }
-
-        .btn {
+        .title .under-title {
             display: flex;
-            gap: 20px;
-            
-         
+            justify-content: center;
+            align-items: center;
 
-        }
-
-        .btn .number {
-
-            font-size: 19px;
-            font-weight: 700;
-            padding: 15px 20px;
-            border-radius: 6px;
-        }
-
-        .btn .arrow-right {
-            
-            background-color: #eeff00;
-            font-size: 19px;
-            font-weight: 700;
-            padding: 15px 20px;
-            border-radius: 6px;
-            transition: all 0.6s linear;
-
+            margin: 0 auto 10px;
+            font-size: 18px;
+            font-weight: 500;
         } 
 
-        .btn .number:hover {
-            background-color: var(--add-color);
-            color: white;
-            transform: scale(1.2);
+        .title .information {
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
+            margin: 0 auto 10px;
+            font-size: 15px;
         }
-        .arrow-right:hover {
-            background-color: var(--add-color);
+/* ============================== Contact form ======================= */
+
+        .contact1 {
+            max-width: 650px;
+            height: auto;
+            margin: 40px auto;
+            padding: 30px;
+            border: 3px solid rgb(255, 102, 0);
+            background-color: #fdfdfc;
+            border-radius: 60px;
+        }
+        /* title ( contact us ) */
+        .contact1 h1 {
+            text-align: center;
+            font-size: 35px;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+
+        .in-card label {
+            display: block;
+            margin: 5px;
+            font-size: 18px;
+        }
+
+        .in-card input {
+             display: block;
+             width: 100%;
+             /* height: 0px; */
+             padding: 10px;
+             margin-bottom: 15px;
+             font-size: 15px;
+             border-radius: 6px;
+             border: 1px solid #333;
+        }
+
+        .in-card textarea {
+            display: block;
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 15px;
+            border-radius: 6px;
+            border: 1px solid #333;
+        }
+
+        .message {
+            display: block;
+            margin: 60px auto 10px;
+            font-size: 20px;
+            width: 190px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+
             color: white;
+            background-color: var(--add-color); 
+            transition: all 0.3s linear; 
         }
- 
- 
+    /* ================================ NEW==================================== */
+
+    /* ==============================MENU PAGE CART==================================== */
+      
+         
+        
+        .cart-page {
+            max-width: 960px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        /* ======= Table ======= */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead th {
+            background: var(--add-color);
+            color: #fff;
+            font-weight: 400;
+            padding: 5px;
+            text-align: left;
+        }
+
+        thead th:nth-child(2) { text-align: center;}
+        thead th:last-child { text-align: right;}
+
+        td {
+            padding: 10px 5px;
+            vertical-align: middle;
+        }
+
+        /* ======== Column 1: image+info ========== */
+        .cart-info {
+            display:flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cart-info img {
+            width: 80px;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .cart-info p {
+
+            margin-top: 0;
+            color: #555;
+            font-size: 16px;
+        }
+
+        .cart-info small {
+            display: block;
+            font-size: 14px;
+            color: #000;
+        }
+
+        .cart-info a {
+            color:  var(--add-color);
+            font-size: 12px;
+        }
+
+        /* Column 2: quantity */
+        td:nth-child(2) { text-align: center;}
+
+        .qty {
+            width: 40px;
+            height: 30px;
+            padding: 5px;
+            border: 1px solid #333;
+            border-radius: 3px;
+        }
+
+        /* ========= Column 3: Subtotal ========= */
+        td:last-child { text-align: right;}
+
+        /* ===== Totals ===== */
+        .total-price {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .total-price table {
+            width: 100%;
+            max-width: 300px;
+            border-top: 3px solid var(--add-color);
+        }
+
+       .total-price td {
+            padding: 10px 5px;
+        }
+
+        .total-price td:first-child { text-align: left; }
+        .total-price td:last-child  { text-align: right; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* ===================== message:hover ==================*/
+        .message:hover {
+            color:rgb(255, 255, 255);
+            background-color: rgb(153, 0, 0);
+            transform: translateY(-5px);
+            box-shadow: 1px 2px 3px black;
+        }
+
     /* close menu when small screen */
        @media (max-width: 768px) {
         .main-nav .bar {
