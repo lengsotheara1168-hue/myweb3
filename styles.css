@@ -6,6 +6,7 @@
 
         :root {
             --add-color:  #ff523b;
+            --all-font-size: clamp(10px, 3vw, 19px);
         }
 
         body {
@@ -192,7 +193,8 @@
         }
         .product {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
             max-width: 960px;
             margin: 0px auto;
             padding: 0;
@@ -224,20 +226,22 @@
         }
         /* ------------- title product ----------- */
         .product .card .name-product {
-           font-size: 15px;
+        
+           font-size: var(--all-font-size);
            color:rgb(66, 66, 66);
            margin-bottom: 5px;
         }
 
         .product .card i {
+            font-size: clamp(11px, 3.3vw, 19px);
             color: var(--add-color);
             margin-bottom: 5px;
         }
 
         .product .card .price {
             font-weight: 500;
-            font-size: 15PX;
-            color:rgb(0, 124, 124);
+            font-size: var(--all-font-size);
+            color: rgb(0, 124, 124);
         }
 
 
@@ -256,7 +260,7 @@
 
         .product-section3 {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
             max-width: 960px;
             margin: 0 auto 60px;
             padding: 0;
@@ -309,17 +313,18 @@
         .product-section3 .card .name-product-sec3 {
            margin-top: 15px;
 
-           font-size: 15px;
+           font-size: var(--all-font-size);
            color:rgb(66, 66, 66);
            margin-bottom: 5px;
         }
 
         .product-section3 .card i {
+            font-size: var(--all-font-size);
             color: var(--add-color);
         }
 
         .product-section3 .card .price-sec3 {
-            font-size: 15px;
+            font-size: var(--all-font-size);
             color:rgb(0, 124, 124);
 
         }
@@ -384,7 +389,7 @@
             height: auto;
             margin: 40px auto;
             padding: 30px;
-            border: 3px solid rgb(255, 102, 0);
+            /* border: 3px solid rgb(255, 102, 0); */
             background-color: #fdfdfc;
             border-radius: 60px;
         }

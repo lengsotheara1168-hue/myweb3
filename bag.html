@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project-ecommerce</title>
+    <!-- Link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Link Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- other link -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="all-in">
+        <header>
+            <a href="index.html" class="logo">MasterIT store</a>
+            <nav class="main-nav">
+                <!-- menu link -------------------------------------------------------- //////////////////////-->
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="About-Us.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <!-- nav-icon ---------------------------------------------------------//////////////////////---->
+                <ul class="nav-icon">
+                    <li><a href="bag.html" class="cart"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                    <li><a href="#" class="bar" id="menuBtn"><i class="fa-solid fa-bars"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <div class="cart-page">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="./image-section2/product-1.jpg" alt="Red printed t-shirt">
+                                <div>
+                                    <p>Red Printed T-Shirt</p>
+                                    <small>Price $500.00</small>
+                                    <a href="#">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input class="qty" type="number" value="1" min="1"></td>
+                        <td>$500.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="./image-section2/product-2.jpg" alt="HRX shoes">
+                                <div>
+                                    <p>HRX Shoes</p>
+                                    <small>Price $1500.00</small>
+                                    <a href="#">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input class="qty" type="number" value="1" min="1"></td>
+                        <td>$1500.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img src="./image-section2/product-3.jpg" alt="Reebok tracksuit">
+                                <div>
+                                    <p>Reebok Tracksuit</p>
+                                    <small>Price $1500.00</small>
+                                    <a href="#">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input class="qty" type="number" value="1" min="1"></td>
+                        <td>$1500.00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>$3500.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>$15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>$3515.00</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script>
+
+        const menuBtn = document.getElementById("menuBtn");
+        const navLinks = document.getElementById("navLinks");
+
+        menuBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            navLinks.classList.toggle("show");
+        });
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project-ecommerce</title>
+    <!-- Link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Link Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- other link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="all-in">
+        <header>
+            <a href="index.html" class="logo">MasterIT store</a>
+            <nav class="main-nav">
+                <!-- menu link -------------------------------------------------------- //////////////////////-->
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="About-Us.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <!-- nav-icon ---------------------------------------------------------//////////////////////---->
+                <ul class="nav-icon">
+                    <li><a href="bag.html" class="cart"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                    <li><a href="#" class="bar" id="menuBtn"><i class="fa-solid fa-bars"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="title">
+            <div class="title-h1">
+                <h1>About MasterIT Store</h1>
+            </div>
+            <div class="under-title">
+                <p>Everything you wanted to know about your fave fashion brand. And then some.</p>
+            </div>
+            <div class="information">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus doloremque quaerat quae sit
+                    inventore temporibus cum
+                    similique iusto, mollitia sapiente ut dicta libero maiores sed quas eos id in pariatur voluptatibus
+                    veritatis molestiae
+                    aut odio! Qui ea dolorum corrupti illo quo similique animi aut dolores ipsa, explicabo consectetur.
+                    Sed laboriosam
+                    alias, voluptates commodi quibusdam, ab, accusantium harum numquam quam deleniti maiores nam eum!
+                    Consequatur ducimus
+                    accusamus quod incidunt soluta corrupti nobis dignissimos ratione ullam ad impedit perferendis
+                    iusto, iste officiis.
+                    Obcaecati magnam consequatur aliquid nostrum, excepturi consequuntur ducimus ad? Obcaecati delectus
+                    ex voluptates
+                    nostrum quasi minus doloremque esse omnis quisquam cupiditate animi consectetur quam rem praesentium
+                    iure pariatur fugit
+                    ratione, a, facilis quibusdam maiores odit molestiae. Corrupti, quasi assumenda nulla necessitatibus
+                    enim ipsam nemo
+                    repellat modi beatae maxime dolores saepe delectus eius exercitationem. Dolores cum beatae,
+                    excepturi nostrum soluta ea
+                    sit aut minus assumenda eligendi! Aliquid hic iure, asperiores nobis aliquam repudiandae optio quasi
+                    ullam voluptate
+                    dolor enim tempore quidem. A, ea distinctio? Placeat facere reprehenderit quisquam molestias! Quidem
+                    ratione maiores
+                    quisquam incidunt delectus mollitia voluptate voluptas totam debitis fugit ad velit libero illo,
+                    itaque, dolor illum
+                    adipisci ut a, nemo obcaecati! Alias repudiandae laborum magnam sapiente sint eos labore!
+                </p>
+            </div>
+        </main>
+
+
+        <script>
+            const menuBtn = document.getElementById("menuBtn");
+            const navLinks = document.getElementById("navLinks");
+
+            menuBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                navLinks.classList.toggle("show");
+            });
+        </script>
+
+
+</body>
+
+</html>
