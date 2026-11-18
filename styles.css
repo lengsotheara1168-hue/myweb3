@@ -172,7 +172,7 @@ header {
 /* ================== Product Section 2 ======================= */
 .section2-title {
   color: rgb(66, 66, 66);
-  font-size: var(--all-font-size);
+  font-size: 25px;
   display: flex;
   margin: auto;
   justify-content: center;
@@ -234,7 +234,7 @@ header {
   color: #5e5d5d;
   margin: 60px auto;
 
-  font-size: var(--all-font-size);
+  font-size: 25px;
 }
 
 /* ============================= product section3 ...Edite ============ */
@@ -303,7 +303,7 @@ header {
   color: var(--add-color);
 }
 
-.product-section3 .card .price-sec3 {
+.product-section3 .card .price {
   font-size: var(--all-font-size);
   color: rgb(0, 124, 124);
 }
