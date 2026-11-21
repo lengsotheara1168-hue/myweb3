@@ -547,8 +547,6 @@ td:last-child {
     margin-left: 0;
   }
 
-
-
   .main-nav .bar {
     display: flex;
   }
@@ -608,5 +606,8 @@ td:last-child {
   }
   .mobile-size-pagination {
     display: flex !important;
+  }
+  .section2-title, .section3-title{
+    font-size: 20px;
   }
 }
